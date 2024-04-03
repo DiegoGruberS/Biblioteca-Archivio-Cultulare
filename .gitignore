@@ -1,1 +1,59 @@
-testeignore.txt
+# Criado por https://www.toptal.com/developers/gitignore/api/java,visualstudiocode,netbeans
+# Edite em https://www.toptal.com/developers/gitignore?templates=java,visualstudiocode,netbeans
+
+###Java###
+#Arquivo de classe compilado
+*.aula
+
+# Arquivo de log
+*.registro
+
+#Arquivos BlueJ
+*.ctxt
+
+# Ferramentas móveis para Java (J2ME)
+.mtj.tmp/
+
+# Arquivos de pacote #
+*.jar
+*.guerra
+*.nar
+*.orelha
+*.fecho eclair
+*.tar.gz
+*.rar
+
+# logs de falhas de máquinas virtuais, consulte http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+repetição_pid*
+
+###NetBeans###
+**/nbprojeto/privado/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+construir/
+nbconstruir/
+dist/
+nbdist/
+.nb-gradle/
+
+###VisualStudioCode###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensões.json
+!.vscode/*.code-snippets
+
+# Histórico local para código do Visual Studio
+.história/
+
+# Construídas extensões de código do Visual Studio
+*.vsix
+
+###Patch do VisualStudioCode###
+# Ignora todo o histórico local de arquivos
+.história
+.ionido
+
+# Fim de https://www.toptal.com/developers/gitignore/api/java,visualstudiocode,netbeans
