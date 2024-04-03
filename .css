@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300;1,400 & display=swap');
+
+/* estilizando todo a página*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* editando a faixa do cabeçalho*/
+header {
+    position: fixed;
+    background: #252d32;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+/* editando a logo*/
+.left img{
+    width: 250px;
+}
+
+.right {
+    float: right;
+    margin-top: -30px;
+    margin-right:  120px;
+}
+
+#login:hover{
+    background: #698697;
+}
+
+
+/*editando o link (nome do perfil) na parte da direita */
+.right a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+}
+
+/*editando a foto do perfil na parte da direita */
+#foto_perfil{
+    width: 40px;
+    float: right;
+    margin-top: -10px;
+    margin-right:  -50px;
+    border-radius: 20px;
+}
+
+
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    margin-right:  px;
+    color: white;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.sair_btn{
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sair_btn:hover{
+    background: #698697;
+}
+
+/*editando o botão sair
+.sair_btn{
+    padding: 5px;
+    background: #9a9a99 ;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right:  40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}*/
+
+/*colocando o efeito no botão sair
+.sair_btn:hover{
+    background: #698697;
+}*/
+
+/*editando o menu*/
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    left: 0;
+    background: #000000;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+/*editando a foto do perfil que fica no menu*/
+/*.sidebar .image {
+    width: 100px; 
+    height: 100px;
+    border-radius : 100px;
+}*/
+
+
+/*editando o nome do usuario que fica no menu*/
+/*.sidebar h2{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}*/
+
+/*editando o link dos itens do menu*/
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background ;
+}
+
+
+/*estilizando a cor do fundo dos botões do menu*/
+.sidebar a:hover {
+    background: #698697;
+}
+
+/*estilizando os icones dentro do menu*/
+.sidebar ion-icon {
+    padding-right: 10px;
+}
+
+/*estilizando o icone do menu*/
+label #sidebar_btn{
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: #fff;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition-property: color;
+}
+
+/*colocando cor ao fundo do botão do icone do menu*/
+label #sidebar_btn:hover {
+    color: #698697;
+}
+
+/* o tanto que ele o menu para a esquerda*/
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+/* editando as palavras do menu para não aparecerem*/
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+/* editando os links dos itens do menu*/
+#check:checked ~ .sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+/* estilizando a parte lateral ao menu*/ 
+.content {
+    background-image: url("img/teste.jpg");
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: center; 
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.conteudo{
+    position: relative;
+    top: 80px;
+    left: 190px;
+}
+
+/* testando - não tinha essa parte*/
+#check:checked ~ .conteudo {
+    margin-left: -80px;
+}
+
+
+
+
+
+/* estilizando a parte lateral ao menu*/
+#check:checked ~ .content {
+    margin-left: -60px;
+}
+
+/* estilizando a parte lateral ao menu*/
+#check {
+    display: none;
+}
+
+/*tela de inicio*/
+.inicio {
+    position: fixed;
+    width: 450px;
+    height: 100%;
+    margin-top: 70px;
+    padding-top: 30px;
+    background: #61a9d3;
+    opacity: 80%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+/*tela de inicio*/
+.box-inicio{
+    margin-top: 40%;
+}
+
+/*tela de inicio*/
+.inicio h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/*tela de inicio*/
+.content-inicio{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size : cover;
+    background-position: esquerda;
+    width: 830px;
+    height: 100vh;
+    transition: 0.5s;
+    float: right;
+}
+
+/*tela de inicio*/
+#check:checked ~ .inicio{
+    left: -190px;
+}
+
+/*tela de inicio*/
+#check:checked ~ .box-inicio h1 {
+    display: none;
+}
+
+.pagina-login {
+    background-color: #ebedf3;
+    font-family: Arial, Helvetica, sans-serif ;
+    overflow: hidden;
+}
+
+.area-login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B264F;
+    border-radius: 30px;
+    width: 280px;
+    height: 320px;
+    padding: 45px;
+}
+
+.login form{
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.login input{
+    margin-top: 20px; /*colocar espaçamento entre os campos de login*/
+    background-color: #353d5d;
+    opacity: 80%;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    height: 35px;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+.login img{
+    width: 300px;
+    height: auto;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #61a9d3;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login h1{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
