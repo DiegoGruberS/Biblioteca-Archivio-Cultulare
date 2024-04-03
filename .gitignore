@@ -1,6 +1,8 @@
 # Criado por https://www.toptal.com/developers/gitignore/api/java,visualstudiocode,netbeans
 # Edite em https://www.toptal.com/developers/gitignore?templates=java,visualstudiocode,netbeans
 
+testeignore.txt
+
 ###Java###
 #Arquivo de classe compilado
 *.aula
